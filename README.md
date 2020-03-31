@@ -67,7 +67,7 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 >>> exit()
 ```
 
-# Commands to upload to the pypi test repository
+## Commands to upload to the pypi test repository
 ```
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 pip install --index-url https://test.pypi.org/simple/ distributions
