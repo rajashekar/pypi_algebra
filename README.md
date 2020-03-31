@@ -2,10 +2,14 @@
 The purpose of this project is to understand how python is created and published to Pypi.
 
 ## To create environment 
+```
 python -m venv basic_algebra
+```
 
 ## Activating environment
+```
 source basic_algebra/bin/activate
+```
 
 ## Building distribution
 ```
@@ -45,8 +49,9 @@ removing 'raj_algebra-0.1' (and everything under it)
 ```
 
 ## Installing twine
+```
 pip install twine
-
+```
 
 ## Testing without installation 
 ```
@@ -63,8 +68,10 @@ Use exit() or Ctrl-D (i.e. EOF) to exit
 ```
 
 # Commands to upload to the pypi test repository
+```
 twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 pip install --index-url https://test.pypi.org/simple/ distributions
+```
 
 ```
 Python 3.7.4 (default, Aug 13 2019, 15:17:50)
@@ -85,8 +92,10 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 
 ## Command to upload to the pypi repository
+```
 twine upload dist/*
 pip install distributions
+```
 
 ## Test cases
 ```
